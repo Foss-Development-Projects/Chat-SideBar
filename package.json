@@ -1,0 +1,18 @@
+{
+  "name": "chat-sidebar",
+  "version": "1.0.0",
+  "description": "Sidebar For Fluid Chat Application",
+  "main": "vite.config.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "Foss",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.58.0",
+    "vite": "^4.1.1"
+  }
+}
