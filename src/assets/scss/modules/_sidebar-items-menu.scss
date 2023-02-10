@@ -1,0 +1,54 @@
+:root {
+	--chat-menu-item-bg-color:chocolate;
+}
+.sidebar-item {
+    .chat-item-menu-toggle {
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .chat-item-menu {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        display: flex;
+        border-radius: 10px;
+        backdrop-filter: blur(2px);
+        flex-direction: column;
+        width: 150px;
+        height: 160px;
+        padding: 5px;
+        z-index: 1;
+        background-color: var(--chat-item-menu-bg-color);
+        transform: scale(0);
+        transition: transform, 100ms ease-out;
+        transform-origin: top right;
+
+        span {
+            padding: 2.5px 2.5px;
+            background-color: var(--chat-menu-item-bg-color);
+            padding: 2.5px;
+            font-size: 14px;
+            margin-bottom: 5px;
+            text-align: center;
+            border-radius: 5px;
+            font-weight: lighter;
+            a {
+                display: grid;
+                grid-template-columns: 20px 1fr;
+                align-items: center;
+                grid-gap: 5px;
+                color: inherit;
+                text-decoration: none;
+                p {
+                    text-align: left;
+                }
+            }
+            a:first-child {
+                border-radius: 5px 5px 0 0;
+            }
+            a:last-child {
+                border-radius: 0 0 5px 5px;
+            }
+        }
+    }
+}

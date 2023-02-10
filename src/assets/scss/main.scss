@@ -1,33 +1,40 @@
 @use './modules/sidebar-header';
 @use './modules/sidebar-items';
+@use './modules/sidebar-items-menu';
 
 :root {
-	--sidebar-bg-color:rgba(0,0,0,0.85);
-	--sidebar-fg-color:white;
-}
-html, body {
-	width: 100%;
-	height: 100%;
-	min-height: 100%;
-}
-body {
-	padding: 5px;
-}
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-}
-.sidebar {
-	height: 100%;
-	display: grid;
-	overflow-x: hidden;
-	border-radius: 10px;
-	grid-template-rows: 60px 1fr;
-	background: var(--sidebar-bg-color);
-	width: 250px;
-	transform-origin: left;
-	transition: width, 200ms ease-out;
-	color: var(--sidebar-fg-color);
+    --sidebar-bg-color: rgba(0, 0, 0, 0.85);
+    --sidebar-fg-color: white;
 }
 
+html,
+body {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    padding: 5px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    height: 100%;
+    display: grid;
+    overflow-x: hidden;
+    border-radius: 10px;
+    grid-template-rows: 60px 1fr;
+    background: var(--sidebar-bg-color);
+    width: 250px;
+    transform-origin: left;
+    transition: width, 200ms ease-out;
+    color: var(--sidebar-fg-color);
+}
