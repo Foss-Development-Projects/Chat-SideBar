@@ -15,122 +15,441 @@
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
         />
-        <title>Chat SideBar</title>
         <link rel="stylesheet" href="./assets/scss/main.scss" />
     </head>
     <body>
-        <aside class="sidebar" id="sidebar">
-            <section class="sidebar-header">
-                <header>Chats</header>
-                <i id="sidebar-menu" class="bi bi-chevron-double-left"></i>
-            </section>
-            <ul class="sidebar-item-list">
-                <li class="sidebar-item">
-                    <a class="sidebar-item-link" href="#">
-                        <div class="item-image">
-                            <img
-                                src="https://wallpaperaccess.com/full/1122261.jpg"
-                                alt="Prince Of Persia"
-                            />
-                            <span class="active-status-dot"></span>
+        <div class="chat-container">
+            <nav class="navbar">
+                <h1>Navbar</h1>
+            </nav>
+            <aside class="sidebar" id="sidebar">
+                <section class="sidebar-header">
+                    <header>Chats</header>
+                    <i id="sidebar-menu" class="bi bi-chevron-double-left"></i>
+                </section>
+                <ul class="sidebar-item-list">
+                    <li class="sidebar-item">
+                        <a class="sidebar-item-link" href="#">
+                            <div class="item-image">
+                                <img
+                                    src="https://wallpaperaccess.com/full/1122261.jpg"
+                                    alt="Prince Of Persia"
+                                />
+                                <span class="active-status-dot"></span>
+                            </div>
+                            <div class="item-details">
+                                <p class="item-username">Username</p>
+                                <p class="item-active-status">Active Now</p>
+                            </div>
+                        </a>
+                        <div class="chat-item-menu-section">
+                            <i
+                                class="bi bi-three-dots-vertical chat-item-menu-toggle"
+                            ></i>
+                            <aside data-chat-menu=0 class="chat-item-menu">
+                                <span>
+                                    <a href="#">
+                                        <i class="bi bi-gear-fill"></i>
+                                        <p>Settings</p>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#">
+                                        <i class="bi bi-star-fill"></i>
+                                        <p>Mark favorite</p>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#">
+                                        <i class="bi bi-person-lines-fill"></i>
+                                        <p>See contact</p>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#">
+                                        <i class="bi bi-eye-slash-fill"></i>
+                                        <p>Hide</p>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#">
+                                        <i class="bi bi-trash3"></i>
+                                        <p>Delete</p>
+                                    </a>
+                                </span>
+                            </aside>
                         </div>
-                        <div class="item-details">
-                            <p class="item-username">Username</p>
-                            <p class="item-active-status">Active Now</p>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-item-link" href="#">
+                            <div class="item-image">
+                                <img
+                                    src="https://i.pinimg.com/564x/5e/bb/d7/5ebbd7fb28d7677da6edb304d407af91.jpg"
+                                    alt="Assassins Creed 4"
+                                />
+                                <span class="active-status-dot"></span>
+                            </div>
+                            <div class="item-details">
+                                <p class="item-username">Username</p>
+                                <p class="item-active-status">Active Now</p>
+                            </div>
+                        </a>
+                        <div>
+                            <i
+                                class="bi bi-three-dots-vertical chat-item-menu-toggle"
+                            ></i>
+                            <aside data-chat-menu=0 class="chat-item-menu">
+                                <span>
+                                    <a href="#">
+                                        <i class="bi bi-gear-fill"></i>
+                                        <p>Settings</p>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#">
+                                        <i class="bi bi-star-fill"></i>
+                                        <p>Mark favorite</p>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#">
+                                        <i class="bi bi-person-lines-fill"></i>
+                                        <p>See contact</p>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#">
+                                        <i class="bi bi-eye-slash-fill"></i>
+                                        <p>Hide</p>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#">
+                                        <i class="bi bi-trash3"></i>
+                                        <p>Delete</p>
+                                    </a>
+                                </span>
+                            </aside>
                         </div>
-                    </a>
-                    <div class="chat-item-menu-section">
-                        <i
-                            class="bi bi-three-dots-vertical chat-item-menu-toggle"
-                        ></i>
-                        <aside data-chat-menu=0 class="chat-item-menu">
-                            <span>
-                                <a href="#">
-                                    <i class="bi bi-gear-fill"></i>
-                                    <p>Settings</p>
-                                </a>
-                            </span>
-                            <span>
-                                <a href="#">
-                                    <i class="bi bi-star-fill"></i>
-                                    <p>Mark favorite</p>
-                                </a>
-                            </span>
-                            <span>
-                                <a href="#">
-                                    <i class="bi bi-person-lines-fill"></i>
-                                    <p>See contact</p>
-                                </a>
-                            </span>
-                            <span>
-                                <a href="#">
-                                    <i class="bi bi-eye-slash-fill"></i>
-                                    <p>Hide</p>
-                                </a>
-                            </span>
-                            <span>
-                                <a href="#">
-                                    <i class="bi bi-trash3"></i>
-                                    <p>Delete</p>
-                                </a>
-                            </span>
-                        </aside>
-                    </div>
-                </li>
-                <li class="sidebar-item">
-                    <a class="sidebar-item-link" href="#">
-                        <div class="item-image">
-                            <img
-                                src="https://i.pinimg.com/564x/5e/bb/d7/5ebbd7fb28d7677da6edb304d407af91.jpg"
-                                alt="Assassins Creed 4"
-                            />
-                            <span class="active-status-dot"></span>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-item-link" href="#">
+                            <div class="item-image">
+                                <img
+                                    src="https://i.pinimg.com/564x/5e/bb/d7/5ebbd7fb28d7677da6edb304d407af91.jpg"
+                                    alt="Assassins Creed 4"
+                                />
+                                <span class="active-status-dot"></span>
+                            </div>
+                            <div class="item-details">
+                                <p class="item-username">Username</p>
+                                <p class="item-active-status">Active Now</p>
+                            </div>
+                        </a>
+                        <div>
+                            <i
+                                class="bi bi-three-dots-vertical chat-item-menu-toggle"
+                            ></i>
+                            <aside data-chat-menu=0 class="chat-item-menu">
+                                <span>
+                                    <a href="#">
+                                        <i class="bi bi-gear-fill"></i>
+                                        <p>Settings</p>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#">
+                                        <i class="bi bi-star-fill"></i>
+                                        <p>Mark favorite</p>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#">
+                                        <i class="bi bi-person-lines-fill"></i>
+                                        <p>See contact</p>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#">
+                                        <i class="bi bi-eye-slash-fill"></i>
+                                        <p>Hide</p>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#">
+                                        <i class="bi bi-trash3"></i>
+                                        <p>Delete</p>
+                                    </a>
+                                </span>
+                            </aside>
                         </div>
-                        <div class="item-details">
-                            <p class="item-username">Username</p>
-                            <p class="item-active-status">Active Now</p>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-item-link" href="#">
+                            <div class="item-image">
+                                <img
+                                    src="https://i.pinimg.com/564x/5e/bb/d7/5ebbd7fb28d7677da6edb304d407af91.jpg"
+                                    alt="Assassins Creed 4"
+                                />
+                                <span class="active-status-dot"></span>
+                            </div>
+                            <div class="item-details">
+                                <p class="item-username">Username</p>
+                                <p class="item-active-status">Active Now</p>
+                            </div>
+                        </a>
+                        <div>
+                            <i
+                                class="bi bi-three-dots-vertical chat-item-menu-toggle"
+                            ></i>
+                            <aside data-chat-menu=0 class="chat-item-menu">
+                                <span>
+                                    <a href="#">
+                                        <i class="bi bi-gear-fill"></i>
+                                        <p>Settings</p>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#">
+                                        <i class="bi bi-star-fill"></i>
+                                        <p>Mark favorite</p>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#">
+                                        <i class="bi bi-person-lines-fill"></i>
+                                        <p>See contact</p>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#">
+                                        <i class="bi bi-eye-slash-fill"></i>
+                                        <p>Hide</p>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#">
+                                        <i class="bi bi-trash3"></i>
+                                        <p>Delete</p>
+                                    </a>
+                                </span>
+                            </aside>
                         </div>
-                    </a>
-                    <div>
-                        <i
-                            class="bi bi-three-dots-vertical chat-item-menu-toggle"
-                        ></i>
-                        <aside data-chat-menu=0 class="chat-item-menu">
-                            <span>
-                                <a href="#">
-                                    <i class="bi bi-gear-fill"></i>
-                                    <p>Settings</p>
-                                </a>
-                            </span>
-                            <span>
-                                <a href="#">
-                                    <i class="bi bi-star-fill"></i>
-                                    <p>Mark favorite</p>
-                                </a>
-                            </span>
-                            <span>
-                                <a href="#">
-                                    <i class="bi bi-person-lines-fill"></i>
-                                    <p>See contact</p>
-                                </a>
-                            </span>
-                            <span>
-                                <a href="#">
-                                    <i class="bi bi-eye-slash-fill"></i>
-                                    <p>Hide</p>
-                                </a>
-                            </span>
-                            <span>
-                                <a href="#">
-                                    <i class="bi bi-trash3"></i>
-                                    <p>Delete</p>
-                                </a>
-                            </span>
-                        </aside>
-                    </div>
-                </li>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-item-link" href="#">
+                            <div class="item-image">
+                                <img
+                                    src="https://i.pinimg.com/564x/5e/bb/d7/5ebbd7fb28d7677da6edb304d407af91.jpg"
+                                    alt="Assassins Creed 4"
+                                />
+                                <span class="active-status-dot"></span>
+                            </div>
+                            <div class="item-details">
+                                <p class="item-username">Username</p>
+                                <p class="item-active-status">Active Now</p>
+                            </div>
+                        </a>
+                        <div>
+                            <i
+                                class="bi bi-three-dots-vertical chat-item-menu-toggle"
+                            ></i>
+                            <aside data-chat-menu=0 class="chat-item-menu">
+                                <span>
+                                    <a href="#">
+                                        <i class="bi bi-gear-fill"></i>
+                                        <p>Settings</p>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#">
+                                        <i class="bi bi-star-fill"></i>
+                                        <p>Mark favorite</p>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#">
+                                        <i class="bi bi-person-lines-fill"></i>
+                                        <p>See contact</p>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#">
+                                        <i class="bi bi-eye-slash-fill"></i>
+                                        <p>Hide</p>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#">
+                                        <i class="bi bi-trash3"></i>
+                                        <p>Delete</p>
+                                    </a>
+                                </span>
+                            </aside>
+                        </div>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-item-link" href="#">
+                            <div class="item-image">
+                                <img
+                                    src="https://i.pinimg.com/564x/5e/bb/d7/5ebbd7fb28d7677da6edb304d407af91.jpg"
+                                    alt="Assassins Creed 4"
+                                />
+                                <span class="active-status-dot"></span>
+                            </div>
+                            <div class="item-details">
+                                <p class="item-username">Username</p>
+                                <p class="item-active-status">Active Now</p>
+                            </div>
+                        </a>
+                        <div>
+                            <i
+                                class="bi bi-three-dots-vertical chat-item-menu-toggle"
+                            ></i>
+                            <aside data-chat-menu=0 class="chat-item-menu">
+                                <span>
+                                    <a href="#">
+                                        <i class="bi bi-gear-fill"></i>
+                                        <p>Settings</p>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#">
+                                        <i class="bi bi-star-fill"></i>
+                                        <p>Mark favorite</p>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#">
+                                        <i class="bi bi-person-lines-fill"></i>
+                                        <p>See contact</p>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#">
+                                        <i class="bi bi-eye-slash-fill"></i>
+                                        <p>Hide</p>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#">
+                                        <i class="bi bi-trash3"></i>
+                                        <p>Delete</p>
+                                    </a>
+                                </span>
+                            </aside>
+                        </div>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-item-link" href="#">
+                            <div class="item-image">
+                                <img
+                                    src="https://i.pinimg.com/564x/5e/bb/d7/5ebbd7fb28d7677da6edb304d407af91.jpg"
+                                    alt="Assassins Creed 4"
+                                />
+                                <span class="active-status-dot"></span>
+                            </div>
+                            <div class="item-details">
+                                <p class="item-username">Username</p>
+                                <p class="item-active-status">Active Now</p>
+                            </div>
+                        </a>
+                        <div>
+                            <i
+                                class="bi bi-three-dots-vertical chat-item-menu-toggle"
+                            ></i>
+                            <aside data-chat-menu=0 class="chat-item-menu">
+                                <span>
+                                    <a href="#">
+                                        <i class="bi bi-gear-fill"></i>
+                                        <p>Settings</p>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#">
+                                        <i class="bi bi-star-fill"></i>
+                                        <p>Mark favorite</p>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#">
+                                        <i class="bi bi-person-lines-fill"></i>
+                                        <p>See contact</p>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#">
+                                        <i class="bi bi-eye-slash-fill"></i>
+                                        <p>Hide</p>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#">
+                                        <i class="bi bi-trash3"></i>
+                                        <p>Delete</p>
+                                    </a>
+                                </span>
+                            </aside>
+                        </div>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-item-link" href="#">
+                            <div class="item-image">
+                                <img
+                                    src="https://i.pinimg.com/564x/5e/bb/d7/5ebbd7fb28d7677da6edb304d407af91.jpg"
+                                    alt="Assassins Creed 4"
+                                />
+                                <span class="active-status-dot"></span>
+                            </div>
+                            <div class="item-details">
+                                <p class="item-username">Username</p>
+                                <p class="item-active-status">Active Now</p>
+                            </div>
+                        </a>
+                        <div>
+                            <i
+                                class="bi bi-three-dots-vertical chat-item-menu-toggle"
+                            ></i>
+                            <aside data-chat-menu=0 class="chat-item-menu">
+                                <span>
+                                    <a href="#">
+                                        <i class="bi bi-gear-fill"></i>
+                                        <p>Settings</p>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#">
+                                        <i class="bi bi-star-fill"></i>
+                                        <p>Mark favorite</p>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#">
+                                        <i class="bi bi-person-lines-fill"></i>
+                                        <p>See contact</p>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#">
+                                        <i class="bi bi-eye-slash-fill"></i>
+                                        <p>Hide</p>
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="#">
+                                        <i class="bi bi-trash3"></i>
+                                        <p>Delete</p>
+                                    </a>
+                                </span>
+                            </aside>
+                        </div>
+                    </li>
+                </ul>
+            </aside>
+            <ul class="chat-msg-section">
+                <li>CHat</li>
             </ul>
-        </aside>
+        </div>
 
         <script src="./assets/js/main.js"></script>
     </body>
